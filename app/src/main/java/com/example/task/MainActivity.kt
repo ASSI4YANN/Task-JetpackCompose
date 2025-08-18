@@ -9,13 +9,11 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -32,7 +30,6 @@ class MainActivity : ComponentActivity() {
             TaskTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     TaskValid(
-
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -47,12 +44,11 @@ val image = painterResource(R.drawable.ic_task_completed)
   Column(
       verticalArrangement = Arrangement.Center, // centrer verticalement
       horizontalAlignment = Alignment.CenterHorizontally, // centrer horizontalement
-      modifier = modifier.fillMaxSize() // pour que l'image prennent l'écran entier
+      modifier = modifier.fillMaxSize() // pour que l'image prend l'écran entier
   ){
     Image(
         painter = image,
         contentDescription = null
-
     )
       Text(
           text = stringResource(R.string.Text_1),
@@ -62,13 +58,10 @@ val image = painterResource(R.drawable.ic_task_completed)
               bottom = 8.dp
           )
       )
-
       Text(
           text = stringResource(R.string.Text_2),
           fontSize = 16.sp
       )
-
-
     }
 }
 
