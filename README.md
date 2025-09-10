@@ -1,5 +1,5 @@
 # **Task-JetpackCompose**
-Salut moi c'est YANN ☻. Il s'agit là , d'un gestionnaire de tâches permet aux utilisateurs de 
+## Salut moi c'est YANN ☻. Il s'agit là , d'un gestionnaire de tâches permet aux utilisateurs de 
 gérer leurs tâches quotidiennes et de vérifier les 
 tâches à effectuer.
 
